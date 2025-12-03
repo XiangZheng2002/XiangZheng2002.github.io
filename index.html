@@ -163,24 +163,55 @@
     <tbody>
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
+  
           <heading style="font-size: 26px;"><i>Education Experience</i></heading>
-          <p style="font-size: 16px;">
-            <b>University of California, Berkeley</b>, Berkeley, United States &emsp; 08/24 – 05/25
-            <br>
-            GPA: 4/4
-            <br>
-            <br>
-
-            <b>South China University of Technology (SCUT)</b>, Guangzhou, China &emsp; 09/21 – 07/25
-            <br>
-            B.Eng &ensp; (Majoring in Artificial Intelligence)
-            <br>
-            GPA: 3.89/4 Rank: 3/80
-          </p>
+  
+          <table style="width:100%;border:0px;border-spacing:0px;margin-top:10px;">
+  
+            <!-- UC Berkeley -->
+            <tr>
+              <td style="font-size:16px;text-align:left;">
+                <b>University of California, Berkeley</b>, Berkeley, United States
+              </td>
+              <td style="font-size:16px;text-align:right;">
+                08/2024 – 05/2025
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="font-size:16px;padding-top:4px;">
+                GPA: 4.0 / 4.0
+              </td>
+            </tr>
+  
+            <tr><td colspan="2" style="height:10px;"></td></tr>
+  
+            <!-- SCUT -->
+            <tr>
+              <td style="font-size:16px;text-align:left;">
+                <b>South China University of Technology (SCUT)</b>, Guangzhou, China
+              </td>
+              <td style="font-size:16px;text-align:right;">
+                09/2021 – 07/2025
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="font-size:16px;padding-top:4px;">
+                B.Eng in Artificial Intelligence (AI)
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="font-size:16px;padding-top:2px;">
+                GPA: 3.89 / 4.00 &nbsp; | &nbsp; Rank: 3 / 80
+              </td>
+            </tr>
+  
+          </table>
+  
         </td>
       </tr>
     </tbody>
   </table>
+  
 
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
@@ -234,7 +265,7 @@
             <i>Rewards</i>
             <span style="font-size:14px;color:#666;"> (Selected)</span>
           </heading>
-            
+
           <table style="width:100%;border:0px;border-spacing:0px;margin-top:10px;">
             <tr>
               <td style="font-size:16px;text-align:left;">
@@ -318,6 +349,33 @@
       </td>
       <td width="75%" valign="middle">
         <a href="https://arxiv.org/abs/2412.04833">
+          <papertitle>SciML Agents: Write the Solver, Not the Solution</papertitle>
+        </a>
+        <br><br>
+          Saarth Gaonkar *, &nbsp;
+          <strong style="color: #0F52BA;">Xiang Zheng *</strong>, &nbsp;
+          <a href="https://haochengxi.github.io/" style="color: black;">Haocheng Xi</a>, &nbsp;
+          <a href="https://www.rishabhtiwari.org/" style="color: black;">Rishabh Tiwari</a>, &nbsp;
+          <a href="https://keutzer.github.io/" style="color: black;">Kurt Keutzer</a>, &nbsp;
+          <a href="https://www.mrzv.org/" style="color: black;">Dmitriy Morozov</a>, &nbsp;
+          <a href="https://www.stat.berkeley.edu/~mmahoney/" style="color: black;">Michael Mahoney</a>, &nbsp;
+          <a href="https://amirgholami.org/" style="color: black;">Amir Gholami</a>, &nbsp;
+        <br>
+        <br>
+        We explore LLMs as SciML agents that generate executable and numerically valid ODE solvers directly from natural-language problem descriptions. We introduce two new datasets, including a diagnostic adversarial benchmark and a large-scale benchmark of 1,000 diverse ODE tasks, and show that modern LLMs, with guided prompting, can reliably select appropriate solvers and produce correct numerical code.
+        <br><br>
+        <em style="font-size: 16px;">Math-AI Workshop, NeurIPS 2025</em>
+        <br>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/papers/wdno.png" alt="layoutgpt_gif" width="200" height="150 " style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/2412.04833">
           <papertitle>Wavelet Diffusion Neural Operator</papertitle>
         </a>
         <br><br>
@@ -333,7 +391,7 @@
           <a href="https://tailin.org/" style="color: black;">Tailin Wu</a>, &nbsp;
         <br>
         <br>
-        Wavelet Diffusion Neural Operator (WDNO) is a framework for PDE simulation and control. By modeling trajectories in the wavelet domain and using multi-resolution training, WDNO handles abrupt changes and generalizes across resolutions. It achieves state-of-the-art performance on five physical systems and a real-world dataset (ERA5), significantly improving long-term accuracy and reducing smoke leakage by 78% in a challenging 2D control task.
+        We propose the <strong>Wavelet Diffusion Neural Operator (WDNO)</strong>, a novel diffusion-based framework for PDE simulation and control that operates in the wavelet domain to better handle abrupt dynamics and long-term dependencies. By combining wavelet-domain diffusion with multi-resolution training, WDNO achieves strong generalization across resolutions. It demonstrates superior performance on multiple challenging physical systems, including Burgers’, compressible Navier–Stokes, and 2D incompressible flows, as well as on the real-world ERA5 climate dataset. In a demanding 2D indirect control task, WDNO reduces smoke leakage by 78% over the best baseline.
         <br><br>
         <em style="font-size: 16px;">ICLR 2025</em>
         <br>

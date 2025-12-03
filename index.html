@@ -345,10 +345,10 @@
 
     <tr>
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <img src="images/papers/wdno.png" alt="layoutgpt_gif" width="200" height="150 " style="border-style: none">
+        <img src="images/papers/sciml_agent.png" alt="layoutgpt_gif" width="200" height="150 " style="border-style: none">
       </td>
       <td width="75%" valign="middle">
-        <a href="https://arxiv.org/abs/2412.04833">
+        <a href="https://arxiv.org/abs/2509.09936">
           <papertitle>SciML Agents: Write the Solver, Not the Solution</papertitle>
         </a>
         <br><br>
@@ -362,7 +362,7 @@
           <a href="https://amirgholami.org/" style="color: black;">Amir Gholami</a>, &nbsp;
         <br>
         <br>
-        We explore LLMs as SciML agents that generate executable and numerically valid ODE solvers directly from natural-language problem descriptions. We introduce two new datasets, including a diagnostic adversarial benchmark and a large-scale benchmark of 1,000 diverse ODE tasks, and show that modern LLMs, with guided prompting, can reliably select appropriate solvers and produce correct numerical code.
+        We explore LLMs as SciML agents that generate executable and numerically valid ODE solvers directly from natural-language problem descriptions. We introduce two new datasets, including a diagnostic adversarial benchmark and a large-scale benchmark of 1,000 diverse ODE tasks, and show that modern LLMs, with guided prompting and proper fine-tuning, can reliably select appropriate solvers and produce correct numerical code.
         <br><br>
         <em style="font-size: 16px;">Math-AI Workshop, NeurIPS 2025</em>
         <br>
@@ -391,7 +391,35 @@
           <a href="https://tailin.org/" style="color: black;">Tailin Wu</a>, &nbsp;
         <br>
         <br>
-        We propose the <strong>Wavelet Diffusion Neural Operator (WDNO)</strong>, a novel diffusion-based framework for PDE simulation and control that operates in the wavelet domain to better handle abrupt dynamics and long-term dependencies. By combining wavelet-domain diffusion with multi-resolution training, WDNO achieves strong generalization across resolutions. It demonstrates superior performance on multiple challenging physical systems, including Burgers’, compressible Navier–Stokes, and 2D incompressible flows, as well as on the real-world ERA5 climate dataset. In a demanding 2D indirect control task, WDNO reduces smoke leakage by 78% over the best baseline.
+        We propose the <strong>Wavelet Diffusion Neural Operator (WDNO)</strong>, a wavelet-domain diffusion framework for PDE simulation and control that enables robust multi-resolution learning under abrupt dynamics. WDNO outperforms strong baselines on Burgers’, compressible Navier–Stokes, 2D incompressible flows, and the ERA5 climate dataset, achieving a 78% reduction in smoke leakage in challenging 2D control tasks.
+        <br><br>
+        <em style="font-size: 16px;">ICLR 2025</em>
+        <br>
+        <p></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <img src="images/papers/CL-DiffPhyCon.png" alt="layoutgpt_gif" width="200" height="150 " style="border-style: none">
+      </td>
+      <td width="75%" valign="middle">
+        <a href="https://arxiv.org/abs/2408.03124">
+          <papertitle>CL-DiffPhyCon: Closed-loop Diffusion Control of Complex Physical Systems</papertitle>
+        </a>
+        <br><br>
+          <a href="https://longweizju.github.io/" style="color: black;">Long Wei *</a>, &nbsp;
+          Haodong Feng *, &nbsp;
+          Yuchen Yang, &nbsp;
+          <a href="https://weenming.github.io/" style="color: black;">Ruiqi Feng </a>, &nbsp;
+          <a href="https://peiyannn.github.io/" style="color: black;">Peiyan Hu </a>, &nbsp;
+          <strong style="color: #0F52BA;">Xiang Zheng</strong>, &nbsp;
+          <a href="https://zhangtao167.github.io/" style="color: black;">Tao Zhang</a>, &nbsp;
+          <a href="https://en.westlake.edu.cn/faculty/dixia-fan.html" style="color: black;">Dixia Fan</a>, &nbsp;
+          <a href="https://tailin.org/" style="color: black;">Tailin WU</a>, &nbsp;
+        <br>
+        <br>
+        We propose CL-DiffPhyCon, an efficient closed-loop diffusion-based control framework that generates real-time control signals via asynchronous denoising across heterogeneous physical time steps. CL-DiffPhyCon achieves superior control performance with significantly improved sampling efficiency on 1D Burgers’ equation and 2D incompressible fluid control tasks.
         <br><br>
         <em style="font-size: 16px;">ICLR 2025</em>
         <br>
@@ -409,7 +437,7 @@
           <papertitle>Updating</papertitle>
         </a>
         <br><br>
-        <!-- <a href="https://ygao36.github.io/" style="color: black;">Yang Gao</a>, &nbsp;
+        <a href="https://ygao36.github.io/" style="color: black;">Yang Gao</a>, &nbsp;
           Yuqin Yang *, &nbsp;
           <strong style="color: #0F52BA;">Xiang Zheng</strong>, &nbsp;
           Yaoshi Chen *, &nbsp;
@@ -417,7 +445,7 @@
           Zhengrong Zhan *, &nbsp;
           <a href="https://zhangtao167.github.io/" style="color: black;">Tao Zhang</a>, &nbsp;
           Haodong Feng, &nbsp;
-          <a href="https://engineering.buffalo.edu/computer-science-engineering/people/faculty-directory/full-time.host.html/content/shared/engineering/computer-science-engineering/profiles/faculty/ladder/jin-zhanpeng.detail.html" style="color: black;">Zhanpeng Jin</a>, &nbsp; -->
+          <a href="https://engineering.buffalo.edu/computer-science-engineering/people/faculty-directory/full-time.host.html/content/shared/engineering/computer-science-engineering/profiles/faculty/ladder/jin-zhanpeng.detail.html" style="color: black;">Zhanpeng Jin</a>, &nbsp;
         Author, updating
         <br>
         <br>

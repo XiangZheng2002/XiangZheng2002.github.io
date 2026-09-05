@@ -568,6 +568,10 @@ h1 span {
   background: var(--surface);
 }
 
+.education-card-featured {
+  grid-column: 1 / -1;
+}
+
 .education-period {
   margin-bottom: 30px;
   color: var(--accent);

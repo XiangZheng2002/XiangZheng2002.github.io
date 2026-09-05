@@ -572,6 +572,7 @@ h1 span {
 
 .education-card-top {
   display: flex;
+  flex-direction: row-reverse;
   gap: 18px;
   align-items: center;
   justify-content: space-between;
@@ -602,7 +603,7 @@ h1 span {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 12px;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
 }
 
 .education-card h3 {

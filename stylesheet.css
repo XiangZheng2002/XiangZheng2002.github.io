@@ -319,13 +319,14 @@ h1 span {
 }
 
 .focus-strip {
-  border-block: 1px solid var(--line);
-  background: rgba(238, 242, 248, 0.62);
+  background: var(--background);
 }
 
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding-block: 18px;
 }
 
 .focus-grid > div {
@@ -333,14 +334,16 @@ h1 span {
   display: flex;
   gap: 13px;
   align-items: center;
-  min-height: 96px;
-  padding: 22px 28px;
-  border-left: 1px solid var(--line);
-  transition: background 180ms ease;
-}
-
-.focus-grid > div:last-child {
-  border-right: 1px solid var(--line);
+  min-height: 82px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.76);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
 }
 
 .focus-grid > div::before {
@@ -357,7 +360,10 @@ h1 span {
 }
 
 .focus-grid > div:hover {
-  background: rgba(37, 99, 235, 0.035);
+  border-color: #cad5e5;
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(21, 35, 58, 0.07);
+  transform: translateY(-2px);
 }
 
 .focus-grid > div:hover::before {

@@ -320,7 +320,7 @@ h1 span {
 
 .focus-strip {
   border-block: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(238, 242, 248, 0.62);
 }
 
 .focus-grid {
@@ -330,73 +330,39 @@ h1 span {
 
 .focus-grid > div {
   position: relative;
-  display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 15px;
+  display: flex;
+  gap: 13px;
   align-items: center;
-  overflow: hidden;
-  min-height: 116px;
-  padding: 24px 26px;
+  min-height: 96px;
+  padding: 22px 28px;
   border-left: 1px solid var(--line);
-  transition:
-    background 180ms ease,
-    transform 180ms ease;
+  transition: background 180ms ease;
 }
 
 .focus-grid > div:last-child {
   border-right: 1px solid var(--line);
 }
 
-.focus-grid > div::after {
-  position: absolute;
-  right: -30px;
-  bottom: -46px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: rgba(37, 99, 235, 0.07);
+.focus-grid > div::before {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), #79a5ff);
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.22);
   content: "";
-  filter: blur(4px);
-  opacity: 0;
-  transition: opacity 180ms ease;
+  transition:
+    width 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .focus-grid > div:hover {
-  background: rgba(239, 245, 255, 0.82);
+  background: rgba(37, 99, 235, 0.035);
 }
 
-.focus-grid > div:hover::after {
-  opacity: 1;
-}
-
-.focus-grid span {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border: 1px solid rgba(37, 99, 235, 0.2);
-  border-radius: 13px;
-  background: linear-gradient(145deg, #ffffff 10%, #e9f1ff 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    0 8px 18px rgba(37, 99, 235, 0.09);
-  color: var(--accent);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  transition:
-    border-color 180ms ease,
-    box-shadow 180ms ease,
-    transform 180ms ease;
-}
-
-.focus-grid > div:hover span {
-  border-color: rgba(37, 99, 235, 0.38);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.9),
-    0 10px 24px rgba(37, 99, 235, 0.16);
-  transform: translateY(-2px);
+.focus-grid > div:hover::before {
+  width: 24px;
+  box-shadow: 0 0 13px rgba(37, 99, 235, 0.32);
 }
 
 .focus-grid p {

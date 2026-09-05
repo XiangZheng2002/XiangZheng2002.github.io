@@ -557,8 +557,9 @@ h1 span {
 
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+  direction: rtl;
 }
 
 .education-card {
@@ -566,10 +567,7 @@ h1 span {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
-}
-
-.education-card-featured {
-  grid-column: 1 / -1;
+  direction: ltr;
 }
 
 .education-period {
@@ -732,6 +730,11 @@ h1 span {
 
   .focus-grid > div:nth-child(-n + 2) {
     border-bottom: 1px solid var(--line);
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    direction: ltr;
   }
 }
 

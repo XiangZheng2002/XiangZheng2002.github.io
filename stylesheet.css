@@ -519,6 +519,22 @@ h1 span {
   text-underline-offset: 3px;
 }
 
+.experience-link {
+  margin: 0 0 18px;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.experience-link a {
+  color: var(--accent);
+}
+
+.experience-link a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .mentors {
   margin-bottom: 18px;
   color: var(--text-soft);

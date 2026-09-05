@@ -446,6 +446,14 @@ h1 span {
   object-fit: contain;
 }
 
+.experience-wordmark {
+  color: #1c4187;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
 .experience-topline {
   display: flex;
   gap: 28px;
@@ -482,6 +490,33 @@ h1 span {
   max-width: 700px;
   margin-bottom: 10px;
   color: #3a4657;
+}
+
+.experience-bullets {
+  display: grid;
+  gap: 9px;
+  max-width: 730px;
+  margin: 0 0 15px;
+  padding-left: 18px;
+  color: #3a4657;
+}
+
+.experience-bullets li {
+  padding-left: 4px;
+}
+
+.experience-bullets li::marker {
+  color: var(--accent);
+}
+
+.experience-bullets a {
+  color: var(--accent-dark);
+  font-weight: 650;
+}
+
+.experience-bullets a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .mentors {

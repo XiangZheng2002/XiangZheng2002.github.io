@@ -119,14 +119,22 @@
               <div class="experience-topline">
                 <div>
                   <p class="role">Research Intern</p>
-                  <h3>Microsoft Research</h3>
+                  <h3>Microsoft Research · DKI Group</h3>
                 </div>
                 <time datetime="2026-04">Apr 2026 — Present</time>
               </div>
-              <p class="experience-description">
-                Working on diffusion large language models for planning, with an emphasis on
-                improving model reasoning and generation.
-              </p>
+              <ul class="experience-bullets">
+                <li>
+                  Built ReGuide, a controllable planning framework that adapts classifier-free
+                  guidance to Tiny Recursive Models through exponential tilting and
+                  cross-window latent-state reuse.
+                </li>
+                <li>
+                  Achieved a state-of-the-art D4RL score of 111 on Hopper with 10× fewer
+                  parameters than the baseline while analyzing why recursive models can
+                  outperform diffusion models on reasoning tasks.
+                </li>
+              </ul>
               <p class="mentors">
                 Advised by
                 <a href="https://www.microsoft.com/en-us/research/people/fangkaiyang/">Dr. Fangkai Yang</a>
@@ -134,37 +142,42 @@
                 <a href="https://www.microsoft.com/en-us/research/people/wlu/">Dr. Lu Wang</a>.
               </p>
               <div class="tags" aria-label="Research areas">
-                <span>Diffusion LLMs</span>
                 <span>Planning</span>
-                <span>Reasoning</span>
+                <span>Tiny Recursive Models</span>
+                <span>D4RL</span>
               </div>
             </div>
           </article>
 
           <article class="experience-card">
             <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="experience-logo">
-              <img src="images/icons/westlake.png" alt="" width="72" height="72">
-            </div>
+            <div class="experience-logo experience-wordmark" aria-hidden="true">verl</div>
             <div class="experience-main">
               <div class="experience-topline">
                 <div>
-                  <p class="role">Research Intern</p>
-                  <h3>Westlake University · AI for Scientific Simulation and Discovery Lab</h3>
+                  <p class="role">Open Source Contributor</p>
+                  <h3>verl · LLM Post-training Framework</h3>
                 </div>
-                <time datetime="2025-08">Aug 2025 — Present</time>
+                <time datetime="2026-06">Jun 2026 — Aug 2026</time>
               </div>
-              <p class="experience-description">
-                Developing discrete diffusion models with improved efficiency and
-                interpretability.
-              </p>
-              <p class="mentors">
-                Advised by <a href="https://tailin.org/">Prof. Tailin Wu</a>.
-              </p>
+              <ul class="experience-bullets">
+                <li>
+                  Contributed multimodal continuous-token rollouts for AgentLoop, including an
+                  end-to-end DeepEyes-v1/Qwen2.5-VL-7B GRPO recipe on 8×A100 GPUs, merged
+                  upstream in
+                  <a href="https://github.com/volcengine/verl/pull/6804">volcengine/verl#6804</a>.
+                </li>
+                <li>
+                  Contributed On-Policy Self-Distillation and led reference-parity validation,
+                  reproducing official TRL training dynamics and Avg@12 results across AIME24/25
+                  and HMMT25 in
+                  <a href="https://github.com/volcengine/verl/pull/6909">volcengine/verl#6909</a>.
+                </li>
+              </ul>
               <div class="tags" aria-label="Research areas">
-                <span>Discrete Diffusion</span>
-                <span>Efficiency</span>
-                <span>Interpretability</span>
+                <span>RL Post-training</span>
+                <span>Multimodal Agents</span>
+                <span>Distributed Training</span>
               </div>
             </div>
           </article>
@@ -177,23 +190,34 @@
             <div class="experience-main">
               <div class="experience-topline">
                 <div>
-                  <p class="role">Undergraduate Research Assistant</p>
+                  <p class="role">Research Assistant</p>
                   <h3>Berkeley AI Research Lab (BAIR) · UC Berkeley</h3>
                 </div>
-                <time datetime="2024-09">Sep 2024 — Aug 2025</time>
+                <time datetime="2024-08">Aug 2024 — Aug 2025</time>
               </div>
-              <p class="experience-description">
-                Developed foundation models for scientific computing and SciML agents for
-                automatic numerical code generation.
-              </p>
+              <ul class="experience-bullets">
+                <li>
+                  Built ODE-1000, a 1,000-task benchmark with symbolic-equivalence diagnostics,
+                  and fine-tuned five Qwen and Llama models on 900 examples across 8 GPUs.
+                </li>
+                <li>
+                  On Qwen3-0.6B, increased execution rate from 27% to 97% and successful-run
+                  accuracy from 63.0% to 87.6%, while reducing mean relative L2 error from
+                  0.371 to 0.104.
+                </li>
+                <li>
+                  Improved in-context operator learning across Transformer architectures by
+                  50% through scientific data augmentation, with stronger generalization on
+                  forward and inverse ODE/PDE tasks.
+                </li>
+              </ul>
               <p class="mentors">
                 Advised by
-                <a href="https://www.stat.berkeley.edu/~mmahoney/">Prof. Michael Mahoney</a>
-                and <a href="https://amirgholami.org/">Dr. Amir Gholami</a>.
+                <a href="https://www.stat.berkeley.edu/~mmahoney/">Prof. Michael Mahoney</a>.
               </p>
               <div class="tags" aria-label="Research areas">
-                <span>Foundation Models</span>
-                <span>AI Agents</span>
+                <span>LLM Fine-tuning</span>
+                <span>Model Evaluation</span>
                 <span>Scientific ML</span>
               </div>
             </div>
@@ -207,52 +231,35 @@
             <div class="experience-main">
               <div class="experience-topline">
                 <div>
-                  <p class="role">Research Intern</p>
+                  <p class="role">Research Assistant</p>
                   <h3>Westlake University · AI for Scientific Simulation and Discovery Lab</h3>
                 </div>
-                <time datetime="2023-07">Jul 2023 — Jun 2024</time>
+                <time>Jul 2023 — Jun 2024 · Jul 2025 — Mar 2026</time>
               </div>
-              <p class="experience-description">
-                Worked on learning-based simulation and control for PDEs and complex physical
-                systems.
-              </p>
+              <ul class="experience-bullets">
+                <li>
+                  Built a multi-resolution wavelet-domain diffusion framework with
+                  inference-time guidance for indirect control of physical systems and
+                  released the first 2D incompressible fluid benchmark for this setting.
+                </li>
+                <li>
+                  Designed a BIC-based scoring framework that constructs per-token DAGs from
+                  discrete-diffusion probabilities and incorporates causal structure into
+                  sampling to improve accuracy and throughput.
+                </li>
+                <li>
+                  Developed a discrete diffusion model that learns inter-token masking
+                  schedules through maximum-entropy reduction, producing a more interpretable
+                  generation order.
+                </li>
+              </ul>
               <p class="mentors">
                 Advised by <a href="https://tailin.org/">Prof. Tailin Wu</a>.
               </p>
               <div class="tags" aria-label="Research areas">
                 <span>Diffusion Models</span>
-                <span>PDEs</span>
-                <span>Physical Systems</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="experience-card">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="experience-logo">
-              <img src="images/icons/scut.jpg" alt="" width="72" height="72">
-            </div>
-            <div class="experience-main">
-              <div class="experience-topline">
-                <div>
-                  <p class="role">Student Research Project Lead</p>
-                  <h3>Cyber-Med Laboratory · South China University of Technology</h3>
-                </div>
-                <time datetime="2022-04">Apr 2022 — Jun 2023</time>
-              </div>
-              <p class="experience-description">
-                Led a student research project on biometric recognition for natural
-                human-computer interaction.
-              </p>
-              <p class="mentors">
-                Advised by
-                <a href="https://www2.scut.edu.cn/ft/2021/1127/c29779a452822/page.htm">Prof. Zhanpeng Jin</a>
-                and <a href="https://ygao36.github.io/">Prof. Yang Gao</a>.
-              </p>
-              <div class="tags" aria-label="Research areas">
-                <span>Biometrics</span>
-                <span>Human-Computer Interaction</span>
-                <span>Project Leadership</span>
+                <span>Scientific Computing</span>
+                <span>Causal Modeling</span>
               </div>
             </div>
           </article>

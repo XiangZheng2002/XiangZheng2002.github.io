@@ -347,16 +347,16 @@ h1 span {
 }
 
 .focus-grid > div::before {
-  flex: 0 0 18px;
-  width: 18px;
-  height: 2px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, var(--accent), #79a5ff);
-  box-shadow: 0 0 10px rgba(37, 99, 235, 0.22);
+  flex: 0 0 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
   content: "";
   transition:
-    width 180ms ease,
-    box-shadow 180ms ease;
+    box-shadow 180ms ease,
+    transform 180ms ease;
 }
 
 .focus-grid > div:hover {
@@ -367,8 +367,8 @@ h1 span {
 }
 
 .focus-grid > div:hover::before {
-  width: 24px;
-  box-shadow: 0 0 13px rgba(37, 99, 235, 0.32);
+  box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.14);
+  transform: scale(1.12);
 }
 
 .focus-grid p {

@@ -563,6 +563,7 @@ h1 span {
 }
 
 .education-card {
+  position: relative;
   padding: 34px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -571,17 +572,14 @@ h1 span {
 }
 
 .education-card-top {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 18px;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 28px;
 }
 
 .education-logo {
+  position: absolute;
+  top: 28px;
+  right: 28px;
   display: grid;
-  flex: 0 0 48px;
   place-items: center;
   width: 48px;
   height: 48px;
@@ -599,6 +597,7 @@ h1 span {
 
 .education-period {
   margin: 0;
+  padding-right: 62px;
   color: var(--accent);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 12px;
